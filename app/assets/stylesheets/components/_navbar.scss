@@ -1,12 +1,88 @@
-.navbar-lewagon {
+.navbar-afri{
   justify-content: space-between;
-  background: white;
+  background-color: transparent;
+  transition: 0.5s background-color ease;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-brand{
+  width: 65px;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar-afri-white {
+  background-color: white;
+
+  .nav-item {
+    text-decoration: none;
+    a {
+      text-decoration: none;
+      margin: 0 0 0 35px;
+      color: gray;
+    }
+  }
+}
+
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.nav-item {
+  text-decoration: none;
+  a {
+    text-decoration: none;
+    margin: 0 0 0 35px;
+    color: gray;
+  }
 }
+
+.nav-main-items {
+  margin-top: 3px;
+  li {
+    display: inline-block;
+    i{
+      color: #A45D58;
+    }
+  }
+}
+
+.fa-user {
+  a {
+    text-decoration: none;
+  }
+}
+
+#navbar-two-white {
+  background-color: white;
+  position: sticky;
+}
+
+.dropdown-menu {
+  a {
+    text-align: center !important;
+    margin: 0 0 0 0 !important;
+  }
+}
+
+.black {
+  color: gray !important;
+}
+
+#nav-logo{
+  mix-blend-mode: multiply;
+}
+
+.banner-right li {
+    display: inline-block;
+    a {
+      text-decoration: none;
+      color: white;
+      margin-right: 50px;
+    }
+  }

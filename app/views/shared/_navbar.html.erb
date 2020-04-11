@@ -1,0 +1,82 @@
+<!-- <div class="navbar-afri fixed-top">
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <img src="https://res.cloudinary.com/durtng53m/image/upload/v1586516921/logo.png" id="nav-logo">
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <div class="nav-main-items">
+          <li class="nav-item">
+            <%= link_to "Messages" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Notifications" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Contact Us" %>
+          </li>
+        </div>
+    </ul>
+  </div>
+
+        <div class="banner-right">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/m-raza-pirbhai/" class="text-white"><i class="fab fa-linkedin fa-3x"></i></a></li>
+            <li><a href="mailto:info@africarriersgroup.com" class="text-white no-deco"><i class="fa fa-envelope-square fa-3x "></i></a></li>
+            <li><a href="https://www.linkedin.com/in/m-raza-pirbhai/" class="text-white"><i class="fab fa-facebook fa-3x" ></i></a></li>
+            <li><a href="https://www.linkedin.com/in/m-raza-pirbhai/" class="text-white"><i class="fab fa-instagram fa-3x" ></i></a></li>
+          </ul>
+        </div>
+  </div>
+</div> -->
+
+
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top navbar-afri">
+  <%= link_to root_path, class: "navbar-brand" do %>
+        <img src="https://res.cloudinary.com/durtng53m/image/upload/v1586516921/logo.png" id="nav-logo">
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <div class="nav-main-items">
+        <li class="nav-item active">
+          <a href="https://www.linkedin.com/in/m-raza-pirbhai/" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="mailto:info@africarriersgroup.com" class="text-white no-deco"><i class="fa fa-envelope-square fa-2x "></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/m-raza-pirbhai/" class="text-white"><i class="fab fa-facebook fa-2x" ></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/m-raza-pirbhai/" class="text-white"><i class="fab fa-instagram fa-2x" ></i></a>
+        </li>
+      </div>
+      <ul class="nav-item dropdown">
+        <%# cl_image_tag current_user.photo.url,
+            class: "avatar dropdown-toggle",
+            id: "navbarDropdown",
+            data: { toggle: "dropdown" },
+            'aria-haspopup': true,
+            'aria-expanded': false %>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to "Settings", "#", class: "dropdown-item black" %>
+          <%# link_to "Log out",
+              destroy_user_session_path,
+              method: :delete,
+              class: "dropdown-item black" %>
+        </div>
+      </ul>
+    </ul>
+  </div>
+</div>

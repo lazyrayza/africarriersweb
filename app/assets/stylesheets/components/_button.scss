@@ -1,0 +1,21 @@
+.banner-btn{
+  font-family: $body-font;
+  background-color: none;
+  border: #7D1710 1px solid;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px !important;
+  margin-left: 22%;
+
+  &:hover, &:focus {
+    background: #7D1710 !important;
+    text-decoration: none;
+    color: white;
+  }
+}

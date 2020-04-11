@@ -1,0 +1,53 @@
+.banner{
+  background-image: url("https://res.cloudinary.com/durtng53m/image/upload/v1585853173/Screenshot_2020-04-01_at_15.16_1_1.png");
+  background-size: cover;
+  height: 100vh;
+  color: #eee;
+  .banner-info{
+    margin-left: 65%;
+  }
+}
+
+.js-typed {
+  display: flex;
+  justify-content: center;
+}
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .program-top h1 {
+    transform: scale(0.4);
+  }
+  .program-top p {
+    transform: scale(0.7);
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .program-top h1 {
+    transform: scale(0.7);
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .program-top h1 {
+    transform: scale(0.8);
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .program-top h1 {
+    transform: scale(0.9);
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .program-top h1 {
+    transform: scale(1);
+  }
+}
