@@ -1,0 +1,122 @@
+.welcome{
+  height: 50%;
+  display: flex;
+    .welcome-info{
+      width: 52vw;
+      padding: 4%;
+    }
+    .welcome-info{
+      h2{
+        margin-top: 4%;
+      }
+    }
+    .welcome-icons{
+      display: flex;
+      flex-direction: column;
+      width: 48vw;
+      background-color:: #A45D58;
+      .icons{
+        margin: auto;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        .africa-icon{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+        .africa-title{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+        #white-title{
+          margin: auto;
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          color: white;
+          margin-top: inherit;
+          h3 {
+            text-align: center;
+          }
+        }
+      }
+    }
+}
+
+
+
+// Smallest device
+@media (max-width: 575px) and (min-width: 100px) {
+  .welcome{
+    flex-direction: column;
+    .welcome-info{
+      width: 100vw;
+      padding: 10%;
+    }
+    .welcome-icons{
+      width: 100vw;
+      .icons{
+        flex-direction: column;
+        width: 100%;
+        padding: 3%;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) and (min-width: 576px) {
+  .welcome{
+    flex-direction: column;
+    .welcome-info{
+      width: 100vw;
+    }
+    .welcome-icons{
+      width: 100vw;
+
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 992px) and(min-width: 768px) {
+  .welcome{
+    flex-direction: column;
+    .welcome-info{
+      width: 100vw;
+    }
+    .welcome-icons{
+      width: 100vw;
+      .icons{
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 1200px) and (min-width: 992px){
+  .welcome{
+
+    .welcome-info{
+      width: 100vw;
+    }
+    .welcome-icons{
+      width: 100vw;
+      .icons{
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .industry-icons {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,252 @@
+// welcome-icon-africa-svg animation css
+
+.new-africa {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  height: 350px;
+  width: 350px;
+  }
+
+// agriculture-plant-svg animation css
+.plant-svg{
+  height: 90px;
+  width: 100px;
+  margin: 8px;
+    &:hover{
+      g {
+        fill-opacity: 0;
+        stroke: #A96D24;
+        animation: fill-in 2s 2s forwards ;
+        stroke-width: 8;
+      }
+
+      g redfill{
+        fill-opacity: 0;
+        stroke: #A96D24;
+        animation: fill-in 2s 2s forwards ;
+        stroke-width: 8;
+      }
+      #one {
+        stroke: #7D1710;
+        stroke-width: 10;
+        animation: draw 3s forwards ;
+        fill-opacity: 0;
+      }
+      #two {
+        stroke-width: 10;
+        stroke: #7D1710;
+        animation: draw 3s forwards ;
+        fill-opacity: 0;
+      }
+      #three {
+        stroke-width: 10;
+        stroke: #A96D24;
+        animation: draw 3s forwards ;
+        fill-opacity: 0;
+      }
+
+    }
+}
+
+.plant-animation{
+  stroke-dashoffset: 550;
+   stroke-dasharray: 879;
+}
+
+#one {
+ fill-opacity: 1;
+ stroke-dashoffset: 550;
+ stroke-dasharray: 879;
+}
+
+#two {
+ fill-opacity: 1;
+ stroke-dashoffset: 1440;
+ stroke-dasharray: 359;
+}
+
+
+#three {
+  stroke: #A96D24;
+  fill-opacity: 1;
+  stroke-dashoffset: 1060;
+  stroke-dasharray: 879;
+}
+
+@keyframes draw {
+from {
+    stroke-dashoffset: 1060;
+    stroke-dasharray: 879;
+  }
+  to {
+    stroke-dashoffset: 0;
+    strock-dasharray: 0;
+  }
+}
+
+@keyframes fill-in {
+  to {
+  fill-opacity: 1;
+  }
+}
+
+
+// automobile-jeep-svg animation css
+
+.autombile-svg{
+  height: 90px;
+  width: 100px;
+  margin: 8px;
+  &:hover{
+    g{
+      fill-opacity: 0;
+      stroke-width: 4;
+      stroke: #A96D24;
+      animation: fill-wheel 3s 5s forwards ;
+    }
+    .wheel{
+
+      animation: draw-wheel 3s forwards;
+    }
+    .car-light{
+
+      animation: draw-wheel 3s linear ;
+    }
+  }
+}
+
+
+@keyframes draw-wheel {
+  from{
+    stroke-dashoffset: 600;
+    stroke-dasharray: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+  }
+}
+
+@keyframes fill-wheel {
+  to{
+    fill-opacity: 1;
+  }
+}
+
+
+/// logistics-truck-svg animation css
+
+.logistics-svg {
+  height: 100px;
+  width: 100px;
+  margin: 3px;
+  &:hover{
+    g{
+      fill-opacity: 0;
+      stroke-width: 4;
+      stroke: #A96D24;
+      animation: fill-dash 3s 5s forwards ;
+
+    }
+    .truck-dash{
+      animation: draw-dash 4s forwards;
+    }
+  }
+}
+
+
+@keyframes draw-dash {
+  from{
+    stroke-dashoffset: 200;
+    stroke-dasharray: 400;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+  }
+}
+
+@keyframes fill-dash {
+  to{
+    fill-opacity: 1;
+  }
+}
+
+
+// realestate-building-svg animation css
+
+.building-svg{
+  height: 100px;
+  width: 100px;
+  margin: 3px;
+  &:hover{
+    a{
+      fill-opacity: 0;
+      stroke-width: 2;
+      stroke: #7D1710;
+      fill: #7D1710 !important;
+      animation: fill-building 3s 5s forwards ;
+
+    }
+    .building-line{
+      animation: draw-building 4s forwards;
+    }
+  }
+}
+
+@keyframes draw-building {
+  from{
+    stroke-dashoffset: 400;
+    stroke-dasharray: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+  }
+}
+
+@keyframes fill-building {
+  to{
+    fill-opacity: 1;
+  }
+}
+
+
+// manfuacturing-machine-svg animation css
+
+.machine-svg{
+  height: 100px;
+  width: 100px;
+  margin: 3px;
+  &:hover{
+    a{
+      animation: draw-machine 2s forwards;
+    }
+    .half-machine{
+      fill-opacity: 0;
+      stroke-width: 1;
+      stroke: #7D1710;
+      animation: fill-machine 3s 5s forwards ;
+    }
+
+  }
+}
+
+
+@keyframes draw-machine {
+  from{
+    stroke-dashoffset: 5000;
+    stroke-dasharray: 5000;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+  }
+}
+
+@keyframes fill-machine {
+  to{
+    fill-opacity: 1;
+  }
+}
