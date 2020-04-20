@@ -1,0 +1,91 @@
+.real-estate-holder{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 8%;
+
+//section 1
+
+  .re-content-section{
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 60vw 40vw;
+    padding: 4%;
+    .re-content-left{
+      display: flex;
+      flex-direction: column;
+      width: 60vw;
+      .re-title{
+        text-align: left;
+        color: #474749;
+        h1 {
+          font-size: 3.5rem;
+        }
+      }
+      .re-paragraph{
+        padding: 3%;
+        font-size: 1.2rem;
+        width: 85%;
+        text-align: justify;
+      }
+    }
+
+    .re-content-right{
+      width: 40vw;
+      .re-temp-pic{
+        width: 500px;
+        box-shadow: -16px 18px 67px 0px rgba(0,0,0,0.37);
+        animation: floatpicture 6s ease-in-out;
+      }
+    }
+  }
+
+@keyframes floatpicture {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+
+//section 2
+
+  .re-svgs-icon-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    justify-content: space-evenly;
+    justify-items: center;
+    .re-svg-box{
+      display: grid;
+      grid-template-columns: 200px;
+      grid-template-rows: 75% 25%;
+      .re-svg{
+        display: flex;
+        align-items: center;
+      }
+      .re-svg-info{
+        margin: 3%;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

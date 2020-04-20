@@ -1,6 +1,6 @@
 .banner-btn{
   font-family: $body-font;
-  background-color: none;
+  background-color: transparent;
   border: #7D1710 1px solid;
   color: white;
   padding: 8px 16px;
@@ -12,7 +12,8 @@
   cursor: pointer;
   border-radius: 4px !important;
   margin-left: 22%;
-
+  width: max-content;
+  height: max-content;
   &:hover, &:focus {
     background: #7D1710 !important;
     text-decoration: none;

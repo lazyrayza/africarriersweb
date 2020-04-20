@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
   get "/contact-us", to: "pages#contactus"
+  get "/about-us", to: "pages#aboutus"
   get "/real-estate", to: "pages#realestate"
   get "/automobile-catalogue", to: "pages#automobile"
   get "/logistics", to: "pages#logistics"

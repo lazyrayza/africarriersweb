@@ -2,49 +2,6 @@ html, body {
   // font-family: 'Raleway', sans-serif;
 
 }
-
-.banner{
-  .banner-info{
-    padding-top: 10%;
-    left: 50%;
-    .logo{
-      mix-blend-mode: multiply;
-      margin-left: 4%;
-      margin-bottom: 3%;
-    }
-    .title{
-      background-size: fit;
-      #box-lines{
-        margin-left: 32px;
-        margin-top: -1%;
-        position: absolute;
-      }
-      .title-line{
-        margin-right: 57%;
-        bottom: 46%;
-        text-align: right;
-
-        #yellow-title{
-          color: #A76C29;
-        }
-        #grey-title{
-          color: #474749;
-        }
-      }
-    }
-    .tag-line{
-      padding-left: 17%;
-      padding-top: 4%;
-    }
-  }
-}
-
-
-
-
-
-
-
 .whychooseus{
   display: flex;
   flex-direction: column;
@@ -60,8 +17,9 @@ html, body {
     display: flex;
     jusify-content: space-evenly;
     padding: 1%;
-    .whychooseus-content-picture{
+    .whychooseus-content-slideshow{
       width: 50vw;
+      display: grid;
     }
     .whychooseus-content-info{
       width: 50vw;
@@ -71,8 +29,9 @@ html, body {
       flex-direction: column;
       justify-content: space-around;
       .whychooseus-icon-box{
-        display: flex;
-        margin: 3%;
+        display: grid;
+          margin: 3%;
+          grid-template-columns: 1fr 1fr;
         .item-icon-plane {
           margin-right: 1%;
           text-align: center;
@@ -115,6 +74,84 @@ html, body {
           }
       }
     }
+  }
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .whychooseus-title{
+    padding: 3%;
+  }
+  .whychooseus-content{
+    flex-direction: column;
+    .whychooseus-content-slideshow{
+      width: 100vw !important;
+    }
+    .whychooseus-content-info{
+      width: 100vw !important;
+      p{
+        padding: 10%;
+      }
+      i{
+        transform: scale(0.75);
+      }
+      h4{
+        font-size: 1rem;
+      }
+      .whychooseus-content-info-icons p{
+        padding: 5%;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) and (min-width: 576px) {
+
+  .whychooseus-content-info{
+    p{
+      padding: 3%;
+    }
+    i{
+      transform: scale(0.75);
+    }
+    h4{
+      transform: scale(0.8);
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 992px) and(min-width: 768px) {
+  .whychooseus-content-info{
+    p{
+      padding: 3%;
+    }
+    i{
+      transform: scale(0.75);
+    }
+    h4{
+      transform: scale(0.8);
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 1200px) and (min-width: 992px) {
+  .whychooseus-content-info{
+    p{
+      padding: 3%;
+    }
+    i{
+      transform: scale(0.9);
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .program-top h1 {
+    transform: scale(1);
   }
 }
 
