@@ -69,6 +69,10 @@
       margin-right: 0% !important;
       padding-top: 10px;
     }
+    .banner .banner-info .tag-line {
+      padding-left: 30%;
+      padding-top: 4%;
+    }
 
   }
 }
@@ -135,7 +139,16 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .program-top h1 {
-    transform: scale(1);
+  .banner-info {
+    display: grid;
+    height: 100%;
+    margin-left: 65% !important;
+    margin-right: 20%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 210px 125px 80px 80px;
+    justify-items: start;
+  }
+  .title-line {
+    margin-right: 0% !important;
   }
 }
