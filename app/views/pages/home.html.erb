@@ -16,7 +16,7 @@
         <span id="banner-typed-text"></span>
       </h4>
     </div>
-    <div class="banner-btn" onclick="scrollToBottom()">DISCOVER</div>
+    <div class="banner-btn" onclick="scrollToSecondSection()">DISCOVER</div>
   </div>
 </div>
 <div class="welcome" id="content">
@@ -848,8 +848,16 @@
 <script type="text/javascript">
 
   var elmnt1 = document.getElementById("content")
+  function scrollToSecondSection() {
+    elmnt1.scrollIntoView({behavior: "smooth"}); // SecondSection
+  }
+</script>
+
+<script type="text/javascript">
+
+  var elmnt2 = document.getElementById("yellow-stat")
   function scrollToBottom() {
-    elmnt1.scrollIntoView({behavior: "smooth"}); // Bottom
+    elmnt2.scrollIntoView({behavior: "smooth"}); // Bottom
   }
 </script>
 

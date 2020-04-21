@@ -1,9 +1,17 @@
 .navbar-afri{
-  justify-content: space-between;
   background-color: transparent;
   transition: 0.5s background-color ease;
-  display: flex;
   justify-content: space-between;
+  text-decoration: none;
+  .nav-item {
+    text-decoration: none;
+    p {
+      text-decoration: none;
+      margin: 0 0 0 35px;
+      color: gray;
+      cursor: pointer;
+    }
+  }
 }
 
 .navbar-brand{
@@ -23,10 +31,11 @@
 
   .nav-item {
     text-decoration: none;
-    a {
+    p {
       text-decoration: none;
       margin: 0 0 0 35px;
       color: gray;
+      cursor: pointer;
     }
   }
 }
@@ -37,10 +46,10 @@
 
 .nav-item {
   text-decoration: none;
-  a {
+  p {
     text-decoration: none;
     margin: 0 0 0 35px;
-    color: gray;
+    color: white;
   }
 }
 
@@ -66,12 +75,18 @@
 }
 
 .dropdown-menu {
+  background-colour: none !important;
   a {
     text-align: center !important;
     margin: 0 0 0 0 !important;
   }
 }
 
+.nav-item dropdown{
+  a{
+  colour: white ;
+  }
+}
 .black {
   color: gray !important;
 }
@@ -84,7 +99,7 @@
     display: inline-block;
     a {
       text-decoration: none;
-      color: white;
+      color: white !important;
       margin-right: 50px;
     }
   }

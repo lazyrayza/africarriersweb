@@ -53,6 +53,10 @@
   }
 }
 
+
+
+
+
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 767px) and (min-width: 576px) {
   .statistics{
@@ -71,7 +75,7 @@
 // Medium devices (tablets, 768px and up)
 @media (max-width: 992px) and(min-width: 768px) {
   .statistics{
-    padding: 10%;
+    padding: 5%;
     .stats-box{
       display: grid;
       grid-template-columns: 1fr 1fr;
