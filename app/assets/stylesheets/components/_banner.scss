@@ -1,3 +1,4 @@
+// Home page banner
 .banner{
   background-image: url("https://res.cloudinary.com/durtng53m/image/upload/v1585853173/Screenshot_2020-04-01_at_15.16_1_1.png");
   background-size: cover;
@@ -150,5 +151,24 @@
   }
   .title-line {
     margin-right: 0% !important;
+  }
+}
+
+
+
+// About us banner
+
+.aboutus-banner{
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("https://res.cloudinary.com/durtng53m/image/upload/v1587566165/pexels-photo-2677843.jpg");
+  background-size: cover;
+  height: 60vh;
+  color: #eee;
+  display: flex;
+  justify-content: start;
+  .aboutus-banner-title{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10%;
+    filter: blur(-38px);
   }
 }

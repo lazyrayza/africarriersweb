@@ -12,6 +12,13 @@
       cursor: pointer;
     }
   }
+
+  .nav-tagline img{
+    background-color: transparent;
+    mix-blend-mode: multiply;
+    background-blend-mode: screen;
+    height: 50px;
+  }
 }
 
 .navbar-brand{
@@ -24,6 +31,8 @@
     right: 0;
     left: 0;
     z-index: 1030;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar-afri-white {

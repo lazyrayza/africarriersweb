@@ -2,8 +2,10 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get "/contact-us", to: "pages#contactus"
   get "/about-us", to: "pages#aboutus"
-  get "/our-business", to: "pages#ourbusiness"
-  get "/leadership", to: "pages#leadership"
+  get "/about-us/our-business", to: "pages#ourbusiness"
+  get "/about-us/leadership", to: "pages#leadership"
+  get "/about-us/vission-and-mission", to: "pages#vissionandmission"
+
   get "/real-estate", to: "pages#realestate"
   get "/automobile-catalogue", to: "pages#automobile"
   get "/logistics", to: "pages#logistics"

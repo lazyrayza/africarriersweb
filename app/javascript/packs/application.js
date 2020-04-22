@@ -26,6 +26,10 @@ require("channels")
 import "bootstrap";
 import $ from 'jquery';
 import { CountUp } from 'countup.js';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { initUpdateNavbarOnScroll } from '../components/navbar';
