@@ -116,11 +116,13 @@ html, body {
 @media (min-width: 100px) and (max-width: 575px) {
 
   .aboutus-content-main-box{
+
     .content-box-story{
       width: 100%;
       background: white;
     }
     .timeline-number{
+    margin-left: 90% !important;
       margin: 5%;
     }
     .aboutus-content-individual-box {
@@ -136,15 +138,18 @@ html, body {
 
   .aboutus-content-main-box{
       .aboutus-content-individual-box{
-        .aboutusimg{
-          width: 340px;
-          height: 185.45px;
+        .content-box-image{
+          width: 100%;
+          .aboutusimg{
+            width: 100%;
+            height: 100%;
+          }
         }
       }
     }
 
     #timeline:before{
-      height: 400vh;
+      height: 280vh;
   }
 
 }
@@ -181,7 +186,7 @@ html, body {
     }
 
     #timeline:before{
-      height: 90%;
+      height: 110%;
     }
 }
 // Large devices (desktops, 992px and up)
