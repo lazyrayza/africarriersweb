@@ -45,6 +45,9 @@ html, body {
     .space-right{
       margin-right: 2%;
     }
+    .space-left{
+      margin-left: 2%;
+    }
     .timeline-number{
       .number-red{
         width: 20px;
@@ -63,6 +66,7 @@ html, body {
       margin-bottom: 4%;
       .content-box-image{
         width: 60%;
+        height: 80%;
 
 
         .img-left{
@@ -77,8 +81,8 @@ html, body {
       }
 
       .aboutusimg{
-        height: 513px;
-        width: 940px;
+        height: 100%;
+        width: 100%;
       }
     }
 
