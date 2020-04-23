@@ -1,0 +1,147 @@
+
+
+
+.contactus-main-container{
+  height: 100%;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.contactus-banner{
+  width: 100%;
+  height: 40vh;
+  background-color: #B87F7C;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-top: 8%;
+    color: #ffff;
+  .contactus-main-title{
+    width: 350px;
+    font-weight: semi-bold 600;
+    font-size: 3rem;
+  }
+
+  .contactus-sub-title{
+    width: 400px;
+    text-align: justify;
+  }
+}
+
+
+.contactus-content{
+  .contactus-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    height: 45vh;
+    margin-top: 10%;
+  }
+}
+.contactus-card {
+  height: 280px;
+  width: 280px;
+  display: grid;
+  grid-template-rows: 30% 20%;
+  cursor: pointer;
+  &:hover{
+    .red-card{
+      border: 1px solid #7D1710;
+    }
+    .yellow-card{
+      border: 1px solid #A76C29;
+    }
+    .contactus-card-info{
+      display: block;
+    }
+  }
+  .contactus-card-title{
+    text-align: center;
+    p{
+    font-size: 1.3rem;
+      margin-top: 8%;
+    }
+  }
+  .contactus-card-img{
+    justify-content: center;
+    display: flex;
+    img{
+      width: 50px;
+      height: 50px;
+      margin: auto;
+    }
+  }
+  .contactus-card-info{
+    text-align: center;
+    margin: auto;
+    display: none;
+    font-weight: lighter;
+
+
+  }
+}
+
+.contactus-card:hover{
+  .red-card{
+      border: 1px solid #7D1710;
+    }
+    .yellow-card{
+      border: 1px solid #A76C29;
+    }
+}
+.red-card{
+      border: 1px solid #B87F7C;
+      }
+      .yellow-card{
+        border: 1px solid #C3A27E;
+      }
+
+
+
+.contactus-info-continue{
+  display: flex;
+  height: 60vh;
+  .contactus-general-location{
+    display: flex;
+    width: 70%;
+    .conactus-general-contact-info{
+      width: 40%;
+      padding-left: 7%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .contact-info-address{
+        height: 100%;
+        p{
+          padding: 4%;
+          line-height: 45px;
+          color: #827C7C;
+        }
+      }
+      .contact-info-details{
+        height: 100%;
+        p{
+          padding: 4%;
+          line-height: 45px;
+          color: #827C7C;
+        }
+      }
+    }
+
+    .contactus-map{
+      width: 60%;
+    }
+  }
+}
+
+.conactus-form-container{
+  width: 40%;
+}
+
+#map{
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+
+

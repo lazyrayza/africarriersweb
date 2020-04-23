@@ -65,3 +65,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #countup.js gem
 gem 'countupjs-rails'
 
+#mailfrom gm
+gem 'mail_form'

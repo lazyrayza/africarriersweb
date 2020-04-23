@@ -1,0 +1,133 @@
+<div class="contactus-main-container">
+  <div class="contactus-banner">
+    <div class="contactus-main-title">
+      <p>CONTACT US</p>
+    </div>
+    <div class="contactus-sub-title">
+      <p>Get in touch with the right people at Africarriers. Hover over the boxes bellow and get in touch a member of our real estate team, marketing team, technical team or HR team. </p>
+    </div>
+  </div>
+
+  <div class="contactus-content">
+
+    <div class="contactus-card-container">
+      <div class="contactus-card red-card">
+        <div class="contactus-card-title">
+          <p>General Inquiries</p>
+        </div>
+        <div class="contactus-card-img">
+          <img src="https://res.cloudinary.com/durtng53m/image/upload/v1587664739/contact.png">
+        </div>
+        <div class="contactus-card-info">
+          <p>
+            Tel: <i>+255 22 2860 300/1/2</i>
+            <br>
+            Fax: <i>+255 22 2865 018</i>
+            <br>
+            E-mail: <i>info@africarriersgroup.com</i>
+            </p>
+        </div>
+      </div>
+      <div class="contactus-card yellow-card">
+        <div class="contactus-card-title">
+          <p>Real Estate Inquiries</p>
+        </div>
+        <div class="contactus-card-img">
+          <img src="https://res.cloudinary.com/durtng53m/image/upload/v1587668949/hook.png">
+        </div>
+        <div class="contactus-card-info">
+          <p>
+            Tel: <i>+255 22 2860 300/1/2</i>
+            <br>
+            Fax: <i>+255 22 2865 018</i>
+            <br>
+            E-mail: <i>marketing@afrexproperties.com</i>
+            </p>
+        </div>
+      </div>
+      <div class="contactus-card red-card">
+
+        <div class="contactus-card-title">
+          <p>Marketing Inquiries</p>
+        </div>
+        <div class="contactus-card-img">
+          <img src="https://res.cloudinary.com/durtng53m/image/upload/v1587664739/global.png">
+        </div>
+        <div class="contactus-card-info">
+          <p>
+            Tel: <i>+255 22 2860 300/1/2</i>
+            <br>
+            Fax: <i>+255 22 2865 018</i>
+            <br>
+            E-mail: <i>marketing@africarriersgroup.com</i>
+            </p>
+        </div>
+
+      </div>
+      <div class="contactus-card yellow-card">
+
+        <div class="contactus-card-title">
+          <p>Corporate Inquiries</p>
+        </div>
+        <div class="contactus-card-img">
+          <img src="https://res.cloudinary.com/durtng53m/image/upload/v1587664739/briefcase.png">
+        </div>
+        <div class="contactus-card-info">
+          <p>
+            Tel: <i>+255 22 2860 300/1/2</i>
+            <br>
+            Fax: <i>+255 22 2865 018</i>
+            <br>
+            E-mail: <i>corporate@africarriersgroup.com</i>
+            </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="contactus-info-continue">
+
+      <div class="contactus-general-location">
+        <div class="conactus-general-contact-info">
+          <div class="contact-info-address">
+            <h2>Corporate head office:</h2>
+            <p>Julius K Nyerere Road, <br>  P.O Box 5998, Dar-es-Salaam, <br> Tanzania, East Africa</p>
+          </div>
+          <div class="contact-info-details">
+            <h2>General Inquiries:</h2>
+            <p><b> Tel:</b> +255 22 2860 300/1/2 <br>
+               <b> Fax:</b> +255 22 2865 018 <br>
+               <b> E-mail:</b> info@africarriersgroup.com</p>
+          </div>
+        </div>
+        <div class="contactus-map">
+          <div id="map"></div>
+        </div>
+      </div>
+
+      <div class="conactus-form-container">
+        <div class="contact-form">
+          <%= render 'shared/contactform'%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -6.85422889, lng: 39.22387592};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?AIzaSyDOCOnKgVj_909zHG4J8Neqg2kqrfPTUY0&callback=initMap">
+    </script>
