@@ -18,7 +18,11 @@
   </head>
 
   <body style="background: white">
-    <%= render 'shared/navbar' %>
+     <% if action_name == "home" %>
+      <%= render 'shared/navbar' %>
+    <% else %>
+      <%= render 'shared/navbar_pages' %>
+    <% end %>
     <%= yield %>
 
     <%= render 'shared/footer' %>

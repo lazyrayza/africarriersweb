@@ -38,69 +38,114 @@
     margin-top: 10%;
   }
 }
-.contactus-card {
+.contactus-card-red-card {
   height: 280px;
   width: 280px;
   display: grid;
   grid-template-rows: 30% 20%;
   cursor: pointer;
+  border: 1px solid #B87F7C;
+
+}
+
+
+.contactus-card-yellow-card {
+  height: 280px;
+  width: 280px;
+  display: grid;
+  grid-template-rows: 30% 20%;
+  cursor: pointer;
+  border: 1px solid #C3A27E;
+}
+
+.contactus-card-red-card{
   &:hover{
-    .red-card{
-      border: 1px solid #7D1710;
-    }
-    .yellow-card{
-      border: 1px solid #A76C29;
-    }
+    border: 1px solid #7D1710;
     .contactus-card-info{
       display: block;
     }
-  }
-  .contactus-card-title{
-    text-align: center;
-    p{
-    font-size: 1.3rem;
-      margin-top: 8%;
+
+    .contactus-card-img{
+    animation: floaticonup 6s ease-in-out infinite;
     }
   }
-  .contactus-card-img{
-    justify-content: center;
-    display: flex;
-    img{
-      width: 50px;
-      height: 50px;
-      margin: auto;
+}
+.contactus-card-yellow-card{
+  &:hover{
+    border: 1px solid #A76C29;
+    .contactus-card-info{
+      display: block;
+    }
+
+    .contactus-card-img{
+    animation: floaticonl-r 6s ease-in-out infinite;
     }
   }
-  .contactus-card-info{
-    text-align: center;
+}
+
+
+@keyframes floaticonup {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes floaticonl-r {
+  0% {
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatex(-10px);
+  }
+  100% {
+    transform: translatex(0px);
+  }
+}
+
+
+
+
+
+.contactus-card-title{
+  text-align: center;
+  p{
+  font-size: 1.3rem;
+    margin-top: 8%;
+  }
+}
+.contactus-card-img{
+  justify-content: center;
+  display: flex;
+  img{
+    width: 50px;
+    height: 50px;
     margin: auto;
-    display: none;
-    font-weight: lighter;
-
-
   }
 }
 
-.contactus-card:hover{
-  .red-card{
-      border: 1px solid #7D1710;
-    }
-    .yellow-card{
-      border: 1px solid #A76C29;
-    }
+
+
+.contactus-card-info{
+  text-align: center;
+  margin: auto;
+  display: none;
+  font-weight: lighter;
+
+
 }
-.red-card{
-      border: 1px solid #B87F7C;
-      }
-      .yellow-card{
-        border: 1px solid #C3A27E;
-      }
+
 
 
 
 .contactus-info-continue{
   display: flex;
-  height: 60vh;
+  height: 80vh;
   .contactus-general-location{
     display: flex;
     width: 70%;
@@ -129,19 +174,21 @@
     }
 
     .contactus-map{
-      width: 60%;
+      width: 50%;
     }
   }
 }
 
 .conactus-form-container{
   width: 40%;
+
 }
 
 #map{
   width: 100%;
   height: 400px;
   background-color: grey;
+  box-shadow: -16px 16px 29px 9px rgba(0,0,0,0.51);
 }
 
 
