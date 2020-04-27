@@ -27,6 +27,9 @@
         margin-right: 57%;
         bottom: 46%;
         text-align: right;
+        h1{
+          padding: 0;
+        }
 
         #yellow-title{
           color: #A76C29;
@@ -59,7 +62,7 @@
     height: 100%;
     margin-left: 4% !important;
     margin-right: 14%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 275px;
     grid-template-rows: 230px 185px 110px 80px;
     padding-top: 25% !important;
     justify-items: start;
@@ -85,7 +88,7 @@
     height: 100%;
     margin-left: 4% !important;
     margin-right: 14%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 275px;
     grid-template-rows: 250px 150px 140px 80px;
     padding-top: 14% !important;
     justify-items: start;
@@ -106,7 +109,7 @@
     height: 100%;
     margin-left: 4% !important;
     margin-right: 14%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 275px;
     grid-template-rows: 250px 150px 140px 80px;
     padding-top: 14% !important;
     justify-items: start;
@@ -127,7 +130,7 @@
     height: 100%;
     margin-left: 4% !important;
     margin-right: 20%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 275px;
     grid-template-rows: 225px 130px 80px 80px;
     padding-top: 25% !important;
     justify-items: start;
