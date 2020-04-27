@@ -1,0 +1,368 @@
+/// colors
+
+$white: #fff;
+$grey: #ccc;
+$dark_grey: #474749;
+$soft_red: #B87F7C;
+$soft_yellow: #CFAE89;
+$red: #7D1710;
+$yellow: #A76C29 ;
+.vandm-container{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: auto;
+
+  .vand-title{
+    p{
+      font-size: 2rem;
+      color: $yellow;
+      text-align: center;
+    }
+  }
+
+
+  .vand-card-container{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 400px 400px;
+    justify-content: center;
+    margin-top: 2%;
+  }
+
+
+  .vandm-card{
+    height: 350px;
+    width: 350px;
+  }
+
+  .vision-title-card{
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    background-color: $red;
+    opacity:0.55;
+    transition: all 0.3s linear;
+    .vision-content{
+      display: grid;
+      margin: auto;
+      justify-content: center;
+      .vision-title{
+        margin: auto;
+        color: $white;
+        font-size: 2rem;
+      }
+      .vision-btn{
+        height:50px;
+      }
+    }
+  }
+
+  .vision-text-card{
+    border: 1px solid $red;
+    color: $dark_grey;
+    display: flex;
+    opacity: 0;
+    transition: all 0.3s linear;
+    .vision-text{
+      color: $dark_grey;
+      text-align: justify;
+      margin: auto;
+      width: 80%;
+    }
+  }
+
+
+  .mission-title-card{
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    background-color: $yellow;
+    opacity:0.55;
+    transition: all 0.3s linear;
+    .mission-content{
+      display: grid;
+      margin: auto;
+      .mission-title{
+        margin: auto;
+        color: $white;
+        font-size: 2rem;
+      }
+      .mission-btn{
+        height: 50px
+      }
+    }
+  }
+
+  .mission-text-card{
+    border: 1px solid $soft_yellow;
+    color: $dark_grey;
+    display: flex;
+    opacity: 0;
+    transition: all 0.3s linear;
+    .mission-text{
+      color: $dark_grey;
+      text-align: justify;
+      margin: auto;
+      width: 80%;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+/// open check button css and animation
+
+
+//vision button
+#btn {
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-top: 20%;
+  margin-left: 40%;
+}
+
+#btn span {
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  top: 50%;
+  left: 50%;
+  background: $white;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+#btn span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: gray;
+  transition: all 0.3s linear;
+}
+#btn span:nth-child(1) {
+  animation: span-first-off 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+#btn span:nth-child(2) {
+  animation: span-second-off 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+#btn span:nth-child(3) {
+  animation: span-third-off 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#btn.on:hover span::before {
+  width: 100%;
+  transition: all 0.3s linear;
+}
+#btn.on span:nth-child(1) {
+  animation: span-first-on 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+#btn.on span:nth-child(2) {
+  animation: span-second-on 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+#btn.on span:nth-child(3) {
+  animation: span-third-on 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+
+//mission button
+#btn1 {
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-top: 20%;
+  margin-left: 40%;
+}
+
+#btn1 span {
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  top: 50%;
+  left: 50%;
+  background: $white;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+#btn1 span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: gray;
+  transition: all 0.3s linear;
+}
+#btn1 span:nth-child(1) {
+  animation: span-first-off 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+#btn1 span:nth-child(2) {
+  animation: span-second-off 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+#btn1 span:nth-child(3) {
+  animation: span-third-off 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#btn1.on:hover span::before {
+  width: 100%;
+  transition: all 0.3s linear;
+}
+#btn1.on span:nth-child(1) {
+  animation: span-first-on 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+#btn1.on span:nth-child(2) {
+  animation: span-second-on 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+#btn1.on span:nth-child(3) {
+  animation: span-third-on 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes span-first-on {
+  0% {
+    transform: translate(-50%, -300%);
+  }
+  30% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+@keyframes span-first-off {
+  0% {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  30% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -300%);
+  }
+}
+@keyframes span-second-on {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  25% {
+    background: gray;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-150%, -50%) scale(0);
+  }
+}
+@keyframes span-second-off {
+  0% {
+    transform: translate(-150%, -50%) scale(0);
+  }
+  25% {
+    background: gray;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes span-third-on {
+  0% {
+    transform: translate(-50%, 200%);
+  }
+  30% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+@keyframes span-third-off {
+  0% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  30% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, 200%);
+  }
+}
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .vandm-container .vand-card-container {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 250px 350px;
+    justify-content: end;
+    margin-top: 2%;
+    margin-right: 9%;
+    .vandm-card{
+      transform: scale(0.48)
+    }
+}
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) and (min-width: 576px) {
+  .vandm-container .vandm-card{
+    transform: scale(0.7)
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 992px) and(min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 1200px) and (min-width: 992px) {
+  .vandm-container{
+    height: 83vh;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+

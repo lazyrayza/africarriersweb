@@ -22,6 +22,19 @@
                 class: "dropdown-item black" %>
           </div>
         </li>
+        <li class="nav-item dropdown">
+          <p class="dropdown-toggle" id="navbarDropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Our Businesses </p>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <%= link_to "Real Estate", real_estate_path,
+                class: "dropdown-item black" %>
+            <%= link_to "Automobile", automobile_catalogue_path,
+                class: "dropdown-item black" %>
+            <%= link_to "Manufacturing", manufacturing_path,
+                class: "dropdown-item black" %>
+            <%= link_to "Farming", farming_path,
+                class: "dropdown-item black" %>
+          </div>
+        </li>
         <li class="nav-item">
           <p><%= link_to "Contact Us", contact_us_path %></p>
         </li>

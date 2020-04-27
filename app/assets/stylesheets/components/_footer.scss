@@ -31,12 +31,18 @@
 
 // Smallest device
 @media (max-width: 575px) and (min-width: 100px) {
-  .footer-container .footer-nav {
+  .footer-container{
+    padding: 5%;
+    .footer-nav {
       display: grid;
       justify-content: space-between;
-    .footer-right{
-      i{
-        transform: scale(0.7);
+      .footer-right{
+        ul{
+          display: flex;
+        }
+        i{
+          transform: scale(0.9);
+        }
       }
     }
   }

@@ -1,9 +1,17 @@
+/// colors
 
+$white: #fff;
+$grey: #ccc;
+$dark_grey: #474749;
+$soft_red: #B87F7C;
+$soft_yellow: #CFAE89;
+$red: #7D1710;
+$yellow: #A76C29 ;
 
 
 .contactus-main-container{
   height: 100%;
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 
 }
 
@@ -38,50 +46,50 @@
     margin-top: 10%;
   }
 }
-.contactus-card-red-card {
+
+.contactus-card {
   height: 280px;
   width: 280px;
   display: grid;
   grid-template-rows: 30% 20%;
   cursor: pointer;
-  border: 1px solid #B87F7C;
-
 }
 
 
-.contactus-card-yellow-card {
-  height: 280px;
-  width: 280px;
-  display: grid;
-  grid-template-rows: 30% 20%;
-  cursor: pointer;
-  border: 1px solid #C3A27E;
-}
 
-.contactus-card-red-card{
+.red-card{
+  border: 1px solid $soft_red;
   &:hover{
-    border: 1px solid #7D1710;
+    border: 1px solid $red;
     .contactus-card-info{
-      display: block;
+      opacity: 1;
     }
-
     .contactus-card-img{
     animation: floaticonup 6s ease-in-out infinite;
     }
   }
 }
-.contactus-card-yellow-card{
+.yellow-card{
+  border: 1px solid #CFAE89;
+  transition: all 0.5s ease-in;
   &:hover{
     border: 1px solid #A76C29;
     .contactus-card-info{
-      display: block;
+      opacity: 1;
     }
-
     .contactus-card-img{
     animation: floaticonl-r 6s ease-in-out infinite;
     }
   }
 }
+.contactus-card-info{
+  text-align: center;
+  margin: auto;
+  opacity: 0;
+  font-weight: lighter;
+  transition: all 0.5s ease-in;
+}
+
 
 
 @keyframes floaticonup {
@@ -131,14 +139,7 @@
 
 
 
-.contactus-card-info{
-  text-align: center;
-  margin: auto;
-  display: none;
-  font-weight: lighter;
 
-
-}
 
 
 

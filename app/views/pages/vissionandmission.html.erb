@@ -1,0 +1,92 @@
+<div class="vandm-container">
+  <div class="vand-title">
+    <p>A GIANT IN AFRICA</p>
+  </div>
+
+  <div class="vand-card-container" id="grid">
+    <div class="vandm-card vision-title-card" id="visionmain">
+      <div class="vision-content">
+        <div class="vision-title">
+          <p>VISION</p>
+        </div>
+        <div class="vision-btn" onclick="openVision()">
+          <button  id="btn"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+    <div class="vandm-card vision-text-card" id="vision">
+      <div class="vision-text">
+        <p>To be an unparalleled compay that is passionate about the creating a sustainable world for the general populace and giving high returns to all stakeholders.</p>
+      </div>
+    </div>
+
+    <div class="vandm-card mission-text-card" id="mission">
+      <div class="mission-text">
+        <p>Provide high quality good and services to our customers.</p>
+      </div>
+    </div>
+    <div class="vandm-card mission-title-card" id="missionmain">
+      <div class="mission-content">
+        <div class="mission-title">
+          <p>MISSION</p>
+        </div>
+        <div class="mission-btn" onclick="openMission()">
+          <button id="btn1"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  // vision text and title card opacity changer
+  function openVision() {
+    var x = document.getElementById("vision");
+    if (x.style.opacity === "1") {
+      x.style.opacity = "0";
+    } else {
+      x.style.opacity = "1";
+    }
+    var xa = document.getElementById("visionmain");
+      if (xa.style.opacity === "0.8") {
+        xa.style.opacity = "0.55";
+      } else {
+        xa.style.opacity = "0.8";
+      }
+  }
+
+  // mission text and title card opacity changer
+  function openMission() {
+    var y = document.getElementById("mission");
+    if (y.style.opacity === "1") {
+      y.style.opacity = "0";
+    } else {
+      y.style.opacity = "1";
+    }
+    var xa = document.getElementById("missionmain");
+      if (xa.style.opacity === "0.8") {
+        xa.style.opacity = "0.55";
+      } else {
+        xa.style.opacity = "0.8";
+      }
+  }
+
+
+   var a = document.getElementById('btn');
+      a.addEventListener('click', function() {
+      if (this.className == 'on') this.classList.remove('on');
+      else this.classList.add('on');
+    });
+
+    var b = document.getElementById('btn1');
+      b.addEventListener('click', function() {
+      if (this.className == 'on') this.classList.remove('on');
+      else this.classList.add('on');
+    });
+</script>
+
+
+
+
+
