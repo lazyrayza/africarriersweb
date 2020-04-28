@@ -120,7 +120,7 @@ html, body {
 @media (min-width: 100px) and (max-width: 575px) {
 
   .aboutus-content-main-box{
-
+    padding: 0;
     .content-box-story{
       width: 100%;
       background: white;
@@ -145,8 +145,9 @@ html, body {
         .content-box-image{
           width: 100%;
           .aboutusimg{
-            width: 100%;
-            height: 100%;
+            width: 85%;
+            height: 75%;
+            margin: 7%;
           }
         }
       }

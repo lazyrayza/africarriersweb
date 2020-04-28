@@ -24,7 +24,6 @@
         position: absolute;
       }
       .title-line{
-        margin-right: 57%;
         bottom: 46%;
         text-align: right;
         h1{
@@ -147,8 +146,8 @@
     display: grid;
     height: 100%;
     margin-left: 65% !important;
-    margin-right: 20%;
-    grid-template-columns: 1fr;
+
+    grid-template-columns: 270px;
     grid-template-rows: 210px 125px 80px 80px;
     justify-items: start;
   }
@@ -174,4 +173,26 @@
     padding-left: 10%;
     filter: blur(-38px);
   }
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px){
+  .aboutus-banner {
+    height: 25vh;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 992px) and(min-width: 768px){
+  .aboutus-banner {
+    height: 35vh;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 1200px) and (min-width: 992px) {
+  .aboutus-banner {
+    height: 35vh;
+  }
+
 }
