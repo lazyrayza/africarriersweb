@@ -37,81 +37,16 @@ html, body {
     }
   }
 }
-  .aboutus-content-main-box{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding: 4%;
-    .space-right{
-      margin-right: 2%;
-    }
-    .space-left{
-      margin-left: 2%;
-    }
-    .timeline-number{
-      .number-red{
-        width: 20px;
-        color: #7D1710;
-      }
-      .number-yellow{
-        width: 20px;
-        color: #A76C29;
-
-      }
-    }
 
 
-    .aboutus-content-individual-box{
-      display: flex;
-      margin-bottom: 4%;
-      .content-box-image{
-        width: 60%;
-        height: 80%;
-
-
-        .img-left{
-          box-shadow: -11px 10px 28px 4px rgba(0,0,0,0.61);
-
-        }
-
-        .img-right{
-          box-shadow: 11px 10px 28px 4px rgba(0,0,0,0.61);
-
-        }
-      }
-
-      .aboutusimg{
-        height: 100%;
-        width: 100%;
-      }
-    }
-
-    .content-box-story{
-      margin-top: auto;
-      margin-bottom: auto;
-      width: 40%;
-      padding: 4%;
-      text-align: justify;
-    }
-  }
-
-.section-finish{
-  text-align: center;
-  color: #7D1710;
-  margin-top: 3%;
+.aboutus-content-main-box{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 4%;
 }
 
 
-
-#timeline:before {
-    content: "";
-    width: 3px;
-    height: 230%;
-    background: #7D1710;
-    left: 50%;
-    position: absolute;
-    z-index: -10;
-}
 
 
 
@@ -119,60 +54,14 @@ html, body {
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
 
-  .aboutus-content-main-box{
-    padding: 0;
-    .content-box-story{
-      width: 100%;
-      background: white;
-    }
-    .timeline-number{
-    margin-left: 90% !important;
-      margin: 5%;
-    }
-    .aboutus-content-individual-box {
-      display: flex;
-      flex-direction: column;
-    }
-  }
 
-  .column-reverse{
-    display: flex;
-    flex-direction: column-reverse !important;
-  }
 
-  .aboutus-content-main-box{
-      .aboutus-content-individual-box{
-        .content-box-image{
-          width: 100%;
-          .aboutusimg{
-            width: 85%;
-            height: 75%;
-            margin: 7%;
-          }
-        }
-      }
-    }
-
-    #timeline:before{
-      height: 280vh;
-  }
 
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 767px) and (min-width: 576px) {
-  .aboutus-content-main-box{
-      .aboutus-content-individual-box{
-        .aboutusimg{
-          width: 340px;
-          height: 185.45px;
-        }
-      }
-    }
 
-    #timeline:before{
-      height: 90%;
-  }
 
 }
 
@@ -181,33 +70,11 @@ html, body {
 
 // Medium devices (tablets, 768px and up)
 @media (max-width: 992px) and(min-width: 768px) {
-  .aboutus-content-main-box{
-      .aboutus-content-individual-box{
-        .aboutusimg{
-          width: 400px;
-          height: 219px;
-        }
-      }
-    }
 
-    #timeline:before{
-      height: 110%;
-    }
 }
 // Large devices (desktops, 992px and up)
 @media (max-width: 1200px) and (min-width: 992px) {
-  .aboutus-content-main-box{
-    .aboutus-content-individual-box{
-      .aboutusimg{
-        width: 540px;
-        height: 295px;
-      }
-    }
-  }
 
-  #timeline:before{
-    height: 90%;
-  }
 }
 
 

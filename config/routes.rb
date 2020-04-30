@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'contact/new'
   root to: 'pages#home'
   get "/contact-us", to: "pages#contactus"
+  get "/csr", to: "pages#csr"
   get "/about-us", to: "pages#aboutus"
   get "/about-us/our-business", to: "pages#ourbusiness"
   get "/about-us/leadership", to: "pages#leadership"
