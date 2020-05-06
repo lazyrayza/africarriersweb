@@ -1,0 +1,349 @@
+$white: #fff;
+$grey: #ccc;
+$dark_grey: #474749;
+$soft_red: #B87F7C;
+$soft_yellow: #CFAE89;
+$red: #7D1710;
+$yellow: #A76C29;
+
+
+.body{
+  animation: opening 1s ease-in-out;
+  font-family: 'Raleway', sans-serif;
+
+}
+.auto-main-container{
+  height: 100%;
+  // display: flex;
+}
+
+.auto-intro-container{
+  min-height: 60vh;
+    width: 95%;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.intro-left{
+  height: 100%;
+  width: 50%;
+}
+
+.intro-para{
+  width:75%;
+}
+
+.intro-title{
+  padding-top: 3rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: #7D1710;
+}
+.intro-right{
+  height: 100%;
+  width: 50%;
+  flex: 1 1 50rem;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  padding-top: 20%;
+  background: #D3C1AE;
+}
+
+.hero-toyota{
+  width: 80%;
+  height: 100%;
+  // object-fit: cover;
+  animation: zoominoutsinglefeatured 3s linear ;
+
+
+}
+
+.plant{
+  position: absolute;
+  bottom: 15%;
+  left: -10%;
+  z-index: -1;
+  transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
+  animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant-shake 2.5s infinite ease alternate-reverse 2s;
+  transform-origin: bottom;
+  max-height: 80%;
+  opacity: 0.8;
+}
+.plant1{
+
+}
+.plant2{
+  position: absolute;
+  bottom: 18%;
+  left: 52%;
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(0.1,0.1);
+    }
+    25% {
+        transform: scale(0.5,0.5);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes plant-entrance {
+  from {
+    transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
+  }
+  to {
+    transform: translateY(0%) rotateZ(0deg) rotateX(0deg);
+  }
+}
+
+@keyframes plant-shake {
+  from {
+    transform: rotateZ(-5deg);
+  }
+
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+
+
+.auto-top-brands-section{
+  height: 100%;
+  background: $dark_grey;
+  padding-bottom: 5%;
+}
+
+.brands-title{
+  color: $white;
+  text-align: center;
+  padding-top: 3rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  margin-bottom: 5%;
+}
+
+.brands-container{
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.brand{
+  height: 660px;
+  width: 270px;
+  transform: skew(-20deg);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  &:hover{
+    box-shadow: -10px 10px 55px -2px rgba(255,255,255,0.56);
+
+  }
+}
+
+.eicher{
+  border: 1px solid $soft_red;
+  overflow: hidden;
+  transition: ease-in-out 0.4s;
+  .brand-title{
+    display: none;
+  }
+  &:hover{
+    width: 330px;
+    border: 2px solid $red;
+    .brand-title{
+      position: absolute;
+      top: 40%;
+      display: block;
+      color: $white;
+      font-size: 16px;
+      font-weight: bold;
+      z-index: 9999999;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      margin: auto;
+      transition: .4s ease-in-out;
+
+    }
+  }
+}
+
+.eicher:before {
+  transform: skew(20deg);
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: -50%;
+  left: -50%;
+  position: absolute;
+  background-image: url(https://res.cloudinary.com/durtng53m/image/upload/v1588703818/34755-TipperTruck_1.png);
+  filter: blur(0);
+}
+.eicher:hover:before{
+  filter: blur(3px);
+  transition: .4s ease-in-out;
+}
+
+.goldendragon{
+  border: 1px solid $soft_yellow;
+  overflow: hidden;
+  transition: ease-in 0.4s;
+  .brand-title{
+    display: none;
+  }
+  &:hover{
+    width: 330px;
+    border: 2px solid $yellow;
+    .brand-title{
+      position: absolute;
+      top: 40%;
+      display: block;
+      color: $white;
+      font-size: 16px;
+      font-weight: bold;
+      z-index: 9999999;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      margin: auto;
+      transition: .4s ease-in-out;
+
+    }
+  }
+}
+
+.goldendragon:before {
+  transform: skew(20deg);
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: -50%;
+  left: -50%;
+  position: absolute;
+  background-image: url(https://res.cloudinary.com/durtng53m/image/upload/v1588703818/8044_4_1.png);
+  filter: blur(0);
+}
+
+.goldendragon:hover:before{
+  filter: blur(3px);
+  transition: .4s ease-in-out;
+}
+
+
+
+
+
+
+
+
+// vehicles-container-types
+
+.auto-multiple-vehicles-container{
+
+}
+
+.vehicles-section-title h2{
+  color: $dark_grey;
+  text-align: center;
+  padding-top: 3rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  margin-bottom: 5%;
+}
+
+
+.product-title h3{
+  color: $grey;
+  text-align: center;
+  padding-top: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  margin-bottom: 5%;
+}
+
+.commercial-products{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.commercial-vehicle{
+  margin: auto;
+}
+
+.retail-products{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.retail-vehicle{
+  margin: auto;
+
+}
+
+.vehicle-description{
+  text-align: center;
+}
+
+.retail-description{
+  padding-top: 4%;
+}
+.vehicle-photo{
+  display: flex;
+  justify-content: center;
+}
+
+
+.truck{
+  width: 475px ;
+  height: 350px;
+  img{
+      width: 315px;
+      height: 220px;
+    }
+}
+
+.bus{
+  width: 475px ;
+  height: 350px;
+  img{
+      width: 100%;
+      height: 220px;
+    }
+}
+
+.car{
+  width: 475px ;
+  height: 350px;
+  margin: auto;
+  img{
+    width: 80%;
+    height: 240px;
+  }
+}
+
+
