@@ -14,9 +14,10 @@
       <img class="hero-toyota" src="https://res.cloudinary.com/durtng53m/image/upload/v1588745739/kisspng-2012-land-rover-range-rover-evoque-2015-land-rover-5b38069908f213-removebg-preview.png" alt="picture-of-toyota-fj">
       <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588691326/palm-right-removebg-preview.png" alt="" class="plant1 plant">
       <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588691324/palm-left-removebg-preview.png" alt="" class="plant2 plant">
+      <!-- <a href="#section02" class="scroll"><span></span></a> -->
     </div>
   </div>
-  <div class="auto-top-brands-section">
+  <div class="auto-top-brands-section" id="sections02">
     <div class="brands-title">
       <h2>
         OUR
@@ -42,6 +43,9 @@
     <div class="vehicles-section-title">
       <h2>Range of Produts</h2>
     </div>
+    <div class="vehicle-section-para">
+      <p>Discover our wide-ranging porfolio of products. Whether you are looking for the latest luxury compac SUV or a heavy duty truck we have what you need. Click to explore further... </p>
+    </div>
     <div class="product-range">
       <div class="commercial-products-holder">
         <div class="product-title">
@@ -50,16 +54,17 @@
 
         <div class="commercial-products">
           <div class="commercial-vehicle truck">
-            <div class="vehicle-photo">
+            <div class="vehicle-photo" data-aos="fade-down-left" data-aos-duration="1000" data-aos-easing="linear" data-toggle="modal" data-target="#haulagetruck_modal">
               <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588748448/eicher-truck-haulage.png" alt="">
             </div>
+              <%= render "haulagetruck_modal" %>
             <div class="vehicle-description">
               <h3>Haulage Trucks</h3>
             </div>
 
           </div>
           <div class="commercial-vehicle truck">
-            <div class="vehicle-photo">
+            <div class="vehicle-photo" data-aos="fade-down-left" data-aos-duration="1000" data-aos-easing="linear">
               <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588748980/eicher-pro-8031-t-removebg-preview.png" alt="">
             </div>
             <div class="vehicle-description">
@@ -67,7 +72,8 @@
             </div>
           </div>
           <div class="commercial-vehicle truck">
-            <div class="vehicle-photo">
+            <div class="vehicle-photo" data-aos="fade-down-left" data-aos-duration="1000"
+     data-aos-easing="linear">
               <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588749264/Eicher_10-removebg-preview.png" alt="">
             </div>
             <div class="vehicle-description">
@@ -75,7 +81,8 @@
             </div>
           </div>
           <div class="commercial-vehicle bus">
-            <div class="vehicle-photo">
+            <div class="vehicle-photo" data-aos="fade-down-left" data-aos-duration="1000"
+     data-aos-easing="linear">
               <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588748980/New_Starline_DD-removebg-preview.png" alt="">
             </div>
             <div class="vehicle-description">
@@ -83,7 +90,8 @@
             </div>
           </div>
           <div class="commercial-vehicle bus">
-            <div class="vehicle-photo">
+            <div class="vehicle-photo" data-aos="fade-down-left" data-aos-duration="1000"
+     data-aos-easing="linear">
               <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588748487/png-transparent-xiamen-golden-dragon-bus-co-ltd-car-zhengzhou-yutong-bus-co-ltd-car-car-accident-vintage-car-mode-of-transport__1_-removebg-preview.png" alt="">
             </div>
             <div class="vehicle-description">
@@ -101,16 +109,19 @@
 
         <div class="retail-products">
           <div class="retail-vehicle car">
-            <div class="vehicle-photo land-cruiser">
+            <div class="vehicle-photo land-cruiser" data-aos="zoom-in-down" data-aos-duration="1000"
+     data-aos-easing="linear" data-toggle="modal" data-target="#landcruiser_modal">
               <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588752657/toyota-land-cruiser-prado-toyota-land-cruiser-200-car-lexus-gx-toyota-land-cruiser-png-clip-art-removebg-preview.png" alt="">
             </div>
+               <%= render "landcruiser_modal" %>
             <div class="vehicle-description retail-description">
               <h3>Luxury SUVs</h3>
             </div>
           </div>
 
           <div class="retail-vehicle car">
-            <div class="vehicle-photo">
+            <div class="vehicle-photo" data-aos="zoom-in-down" data-aos-duration="1000"
+     data-aos-easing="linear">
               <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588748487/nissan-hardbody-truck-pickup-truck-2018-nissan-frontier-van-nissan-removebg-preview.png" alt="">
             </div>
             <div class="vehicle-description retail-description">
@@ -118,8 +129,9 @@
             </div>
           </div>
 
-          <div class="retail-vehicle car">
-            <div class="vehicle-photo">
+          <div class="retail-vehicle car" >
+            <div class="vehicle-photo" data-aos="zoom-in-down" data-aos-duration="1000"
+     data-aos-easing="linear">
               <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588691222/fjhome-removebg-preview.png" alt="">
             </div>
             <div class="vehicle-description retail-description">
@@ -128,8 +140,9 @@
           </div>
 
           <div class="retail-vehicle car">
-            <div class="vehicle-photo">
-              <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588748482/download__4_-removebg-preview.png" alt="">
+            <div class="vehicle-photo" data-aos="zoom-in-down" data-aos-duration="1000"
+     data-aos-easing="linear">
+              <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588753417/toyota-vitz-honda-fit-car-toyota-corolla-toyota-yaris-png-clip-art-removebg-preview.png" alt="">
             </div>
             <div class="vehicle-description retail-description">
               <h3>Hatchbacks</h3>
@@ -137,7 +150,8 @@
           </div>
 
           <div class="retail-vehicle car">
-            <div class="vehicle-photo">
+            <div class="vehicle-photo" data-aos="zoom-in-down" data-aos-duration="1000"
+     data-aos-easing="linear">
               <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588748492/20150107_02_01-removebg-preview.png" alt="">
             </div>
             <div class="vehicle-description retail-description">
@@ -146,7 +160,8 @@
           </div>
 
           <div class="retail-vehicle car">
-            <div class="vehicle-photo">
+            <div class="vehicle-photo" data-aos="zoom-in-down" data-aos-duration="1000"
+     data-aos-easing="linear">
               <img src="https://res.cloudinary.com/durtng53m/image/upload/v1588748484/bmw-3-series-car-2014-bmw-4-series-convertible-cabrio-png-clip-art-removebg-preview.png" alt="">
             </div>
             <div class="vehicle-description retail-description">
