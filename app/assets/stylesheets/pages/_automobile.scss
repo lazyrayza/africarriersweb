@@ -19,12 +19,12 @@ $yellow: #A76C29;
 }
 
 .auto-intro-container{
-  min-height: 60vh;
-    width: 95%;
-    margin: 0 0 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
+  max-height: 100%;
+  width: 95%;
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .intro-left{
@@ -34,6 +34,7 @@ $yellow: #A76C29;
 
 .intro-para{
   width:75%;
+  text-align: justify;
 }
 
 .intro-title{
@@ -81,18 +82,18 @@ $yellow: #A76C29;
   bottom: 18%;
   left: 52%;
 }
-.scroll {
-  position: absolute;
-    bottom: 20px;
-    left: 0%;
-    width: 33px;
-    height: 33px;
-    margin-left: -12px;
-    border-left: 3px solid $soft_grey;
-    border-bottom: 3px solid $soft_grey;
-    transform: rotate(-45deg);
-    box-sizing: border-box;
-}
+// .scroll {
+//   position: absolute;
+//     bottom: 20px;
+//     left: 0%;
+//     width: 33px;
+//     height: 33px;
+//     margin-left: -12px;
+//     border-left: 3px solid $soft_grey;
+//     border-bottom: 3px solid $soft_grey;
+//     transform: rotate(-45deg);
+//     box-sizing: border-box;
+// }
 
 @keyframes zoominoutsinglefeatured {
     0% {
@@ -362,4 +363,226 @@ $yellow: #A76C29;
   }
 }
 
+
+
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .auto-intro-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .intro-left{
+    width: 100%;
+  }
+  .intro-title{
+    text-align: center;
+  }
+  .intro-para {
+    width: 90%;
+    text-align: justify;
+    margin: 5%;
+  }
+  .intro-right{
+    margin: 0;
+  }
+  .plant{
+    bottom: 25%;
+    left: -2%;
+  }
+  .plant2 {
+    bottom: 28%;
+    left: 61%;
+  }
+  .hero-toyota{
+    width: 95%;
+  }
+  .brand{
+    height: 300px;
+    width: 100px;
+    transform: skew(-10deg);
+  }
+  .eicher{
+    &:hover{
+      width: 160px;
+      border: 2px solid $red;
+    }
+  }
+
+  .goldendragon{
+    &:hover{
+      width: 160px;
+      border: 2px solid $yellow;
+    }
+  }
+  .eicher:before{
+    transform: skew(10deg);
+  }
+  .vehicle-section-para {
+    padding: 4%;
+  }
+
+  .commercial-products {
+    width: 94%;
+  }
+  .truck{
+    width: 335px;
+    height: 300px;
+  }
+
+  .bus {
+    width: 385px;
+    height: 250px;
+    img {
+       width: 80%;
+    height: 160px;
+    }
+  }
+  .retail-products {
+    width: 94%;
+  }
+
+  .car {
+    width: 325px;
+    height: 260px;
+    margin: auto;
+
+      img {
+      width: auto;
+      height: 145px;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) and (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 992px) and(min-width: 768px) {
+  .auto-intro-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .intro-left{
+    width: 100%;
+  }
+  .intro-title{
+    text-align: center;
+  }
+  .intro-para {
+    width: 90%;
+    text-align: justify;
+    margin: 5%;
+  }
+  .intro-right{
+    margin: 0;
+  }
+  .plant{
+    bottom: 25%;
+    left: -2%;
+  }
+  .plant2 {
+    bottom: 28%;
+    left: 61%;
+  }
+  .hero-toyota{
+    width: 95%;
+  }
+  .brand{
+    height: 450px;
+    width: 200px;
+  }
+
+  .vehicle-section-para {
+    padding: 4%;
+  }
+
+  .commercial-products {
+    width: 94%;
+  }
+  .truck{
+    width: 335px;
+    height: 300px;
+  }
+
+  .bus {
+    width: 385px;
+    height: 250px;
+    img {
+      width: 85%;
+      height: 190px;
+    }
+  }
+  .retail-products {
+    width: 94%;
+  }
+
+  .car {
+    width: 325px;
+    height: 260px;
+    margin: auto;
+
+      img {
+      width: auto;
+      height: 145px;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 1200px) and (min-width: 992px) {
+  .auto-intro-container {
+    max-height: 60vh;
+    width: 95%;
+    margin: 0 0 0 auto;
+    display: flex;
+     flex-wrap: inherit;
+    overflow: hidden;
+  }
+
+  .intro-left{
+    width: 100%;
+  }
+
+  .intro-right{
+    margin: 0;
+  }
+
+  .hero-toyota{
+    width: 105%;
+  }
+  .brand{
+    height: 450px;
+    width: 200px;
+  }
+
+  .vehicle-section-para {
+    padding: 4%;
+  }
+
+  .commercial-products {
+    width: 94%;
+  }
+
+  .retail-products {
+    width: 94%;
+  }
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
 
