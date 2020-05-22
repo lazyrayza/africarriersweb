@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get "/automobile-catalogue", to: "pages#automobile"
   get "/logistics", to: "pages#logistics"
   get "/manufacturing", to: "pages#manufacturing"
-  get "/farming", to: "pages#farming"
+  get "/agriculture", to: "pages#agriculture"
 
   resources :contacts, only: [:new, :create]
 
