@@ -830,77 +830,73 @@
   <div class="stats-box">
     <div class="individual-stat" id="red-stat">
       <img src="https://res.cloudinary.com/durtng53m/image/upload/v1585903887/value.png" style="width: 100px">
-      <h5><span class="count0">10000</span>+<br> Satisfied Customers</h5>
+      <h5><span class="counter" data-target="1000">0</span>+<br> Satisfied Customers</h5>
     </div>
     <div class="individual-stat" id="yellow-stat">
       <img src="https://res.cloudinary.com/durtng53m/image/upload/v1585903886/crm_1.png" style="width: 100px">
-      <h5><span id="count1">5000</span>+<br> Team memebers</h5>
+      <h5><span class="counter" data-target="5000">0</span>+<br> Team memebers</h5>
     </div>
     <div class="individual-stat" id="red-stat">
       <img src="https://res.cloudinary.com/durtng53m/image/upload/v1585903886/countdown.png" style="width: 100px">
-      <h5>40+ Years Experience</h5>
+      <h5><span class="counters" >4</span>+<br> Decades Experience</h5>
     </div>
     <div class="individual-stat" id="yellow-stat">
       <img src="https://res.cloudinary.com/durtng53m/image/upload/v1585918724/prototype_1_1.png" style="width: 100px">
-      <h5>Industries Leaders</h5>
+      <h5><span class="counter" data-target="400">0</span>+<br> Projects</h5>
     </div>
   </div>
 </div>
 
 
 
-<!-- banner button scroll -->
-<script type="text/javascript">
-
-  var elmnt1 = document.getElementById("content")
-  function scrollToSecondSection() {
-    elmnt1.scrollIntoView({behavior: "smooth"}); // SecondSection
-  }
-</script>
-
-<script type="text/javascript">
-
-  var elmnt2 = document.getElementById("yellow-stat")
-  function scrollToBottom() {
-    elmnt2.scrollIntoView({behavior: "smooth"}); // Bottom
-  }
-</script>
 
 
 
 
 
 <!-- Counter js count0 -->
-<script type="text/javascript" src="./main.js"  type="module">
+<script type="text/javascript" >
+  var section = document.querySelector('.statistics');
+  var hasEntered = false;
 
-  window.onload = function() {
-  var countUp = new CountUp('target', 2000);
-  countUp.start();
-}
-</script>
+  window.addEventListener('scroll', (e) => {
+    var shouldAnimate = (window.scrollY + window.innerHeight) >= section.offsetTop;
 
-<!-- Counter js count1 -->
-<script type="text/javascript">
-  let start // set on the first step to the timestamp provided
-  const el = document.getElementById('count1') // get the element
-  const final = parseInt(el.textContent, 10) // parse out the final number
-  const duration = 2000 // duration in ms
-  const step = ts => {
-    if (!start) {
-      start = ts
+    if (shouldAnimate && !hasEntered) {
+      hasEntered = true;
+
+      const counters = document.querySelectorAll('.counter');
+      const speed = 200; // The lower the slower
+
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText;
+
+          // Lower inc to slow and higher to slow
+          const inc = target / speed;
+
+          // console.log(inc);
+          // console.log(count);
+
+          // Check if target is reached
+          if (count < target) {
+            // Add inc to count and output in counter
+            counter.innerText = count + inc;
+            // Call function every ms
+            setTimeout(updateCount, 1);
+          } else {
+            counter.innerText = target;
+          }
+        };
+
+        updateCount();
+      });
+
     }
-    // get the time passed as a fraction of total duration
-    let progress = (ts - start) / duration
+  });
 
-    el.textContent = Math.floor(progress * final) // set the text
-    if (progress < 1) {
-      // if we're not 100% complete, request another animation frame
-      requestAnimationFrame(step)
-    }
-  }
 
-// start the animation
-requestAnimationFrame(step)
 
 </script>
 
