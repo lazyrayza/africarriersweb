@@ -226,3 +226,92 @@ $yellow: #A76C29 ;
 .sleeve{
   stroke: $grey;
 }
+
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+.csr-banner-image img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-left: 8px #B87F7C solid;
+    border-bottom: 8px #B87F7C solid;
+    padding: 5%;
+  }
+
+  .csr-banner-title {
+    color: #7D1710;
+    position: absolute;
+    bottom: 70%;
+    right: 3%;
+    font-size: 30px;
+    width: min-content;
+  }
+
+  .intro-para {
+    margin-bottom: 40%;
+  }
+  .csr-section {
+    flex-direction: column;
+    .section-content {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+    }
+    .section-svg {
+      margin: auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  #environment{
+    flex-direction: column-reverse;
+  }
+
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) and (min-width: 576px) {
+ .csr-banner-image img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-left: 8px #B87F7C solid;
+    border-bottom: 8px #B87F7C solid;
+    padding: 5%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 992px) and(min-width: 768px) {
+  .csr-banner-title {
+
+    bottom: 50%;
+    right: -3%;
+    width: 50%;
+  }
+
+  .csr-section {
+
+    margin: 1%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 1200px) and (min-width: 992px) {
+  .csr-banner-title {
+    bottom: 60%;
+    right: 5%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+
