@@ -1,0 +1,228 @@
+/// Main colours
+$white: #fff;
+$grey: #ccc;
+$dark_grey: #474749;
+$soft_red: #B87F7C;
+$soft_yellow: #CFAE89;
+$red: #7D1710;
+$yellow: #A76C29 ;
+
+.csr-main{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.csr-banner{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.csr-banner-image{
+  display: flex;
+  justify-content: center;
+  img{
+    width: 705px;
+    height: auto;
+    margin: auto;
+    border-left: 8px $soft_red solid;
+    border-bottom: 8px $soft_red solid;
+    padding: 5%;
+  }
+}
+
+.csr-banner-title{
+  color: $red;
+  position: absolute;
+  bottom: 50%;
+  right: 20%;
+  font-weight: 900;
+  font-size: 60px;
+  width: min-content;
+}
+
+.intro-para{
+  text-align: justify;
+  margin: auto;
+
+  p{
+    margin-bottom: 10%;
+  }
+  b{
+    color: $red;
+  }
+  #yellow-text{
+    color: $yellow;
+  }
+}
+
+
+.csr-sections{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.csr-section{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  .section-content{
+    display: flex;
+    flex-direction: column;
+
+    width: 65%;
+    .csr-section-title{
+      color: $yellow;
+      font-weight: 800;
+      font-size: 40px;
+
+    }
+    #right-align{
+      text-align: end;
+      border-right: 8px $soft_red solid;
+      border-top: 0;
+      border-left: none;
+      p{
+        border-top: 8px #B87F7C solid;
+        width: fit-content;
+        margin-left: auto;
+      }
+    }
+    #left-align{
+      // text-align: end;
+      border-left: 8px $soft_red solid;
+      border-top: 0;
+      p{
+        border-top: 8px $soft_red solid;
+        width: 300px;
+      }
+
+    }
+    .csr-section-info{
+      color: $dark_grey;
+      text-align: justify;
+      padding: 8px;
+      border-left: 8px $soft_red solid;
+    }
+    #right-align-text{
+      border-right: 8px $soft_red solid;
+      border-left: none;
+    }
+  }
+
+  .section-svg{
+    margin: auto;
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+#poverty-svg{
+  svg{
+    width: 70%;
+    height: 100%;
+    margin: 5%;
+
+  }
+}
+#environment-svg{
+  svg{
+    width: 70%;
+    height: 100%;
+    margin: 5%;
+  }
+}
+
+#education-svg{
+  svg{
+    width: 60%;
+    height: 100%;
+    margin: 5%;
+  }
+}
+
+
+.inner-leaf{
+  animation: floatleaf 6s ease-in-out infinite;
+}
+
+@keyframes floatleaf {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(1.02);
+  }
+  50% {
+    transform: scaleY(.92);
+  }
+  75% {
+    transform: scaleY(.86);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+
+// .shine{
+//   animation: growshine 6s ease-in-out infinite;
+// }
+
+// @keyframes growshine {
+//   0% {
+//     transform: scaleY(1.01);
+//   }
+//   25% {
+//     transform: scale(1.02);
+//   }
+//   50% {
+//     transform: scaleY(.92);
+//   }
+//   75% {
+//     transform: scaleY(.86);
+//   }
+//   100% {
+//     transform: scaleY(1);
+//   }
+// }
+
+
+.big-bulb{
+  animation: floatbulb 6s ease-in-out infinite;
+}
+
+@keyframes floatbulb {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-30px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+}
+
+
+.leaves{
+  stroke: $soft-red;
+}
+.stem{
+  stroke: $soft-yellow;
+}
+.hand{
+  stroke: $red;
+}
+.mud{
+  stroke: brown;
+}
+.sleeve{
+  stroke: $grey;
+}
