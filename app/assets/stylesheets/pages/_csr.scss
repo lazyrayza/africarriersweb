@@ -232,9 +232,9 @@ $yellow: #A76C29 ;
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
 .csr-banner-image img {
-    width: 100%;
+    width: 220%;
     height: auto;
-    margin: auto;
+    margin-left: 100%;
     border-left: 8px #B87F7C solid;
     border-bottom: 8px #B87F7C solid;
     padding: 5%;
@@ -242,7 +242,7 @@ $yellow: #A76C29 ;
 
   .csr-banner-title {
     color: #7D1710;
-    position: absolute;
+    position: relative;
     bottom: 70%;
     right: 3%;
     font-size: 30px;
@@ -277,12 +277,15 @@ $yellow: #A76C29 ;
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 767px) and (min-width: 576px) {
  .csr-banner-image img {
-    width: 100%;
+    width: 150%;
     height: auto;
     margin: auto;
     border-left: 8px #B87F7C solid;
     border-bottom: 8px #B87F7C solid;
     padding: 5%;
+  }
+  .csr-banner-title {
+    position: relative;
   }
 }
 
