@@ -50,3 +50,11 @@ document.addEventListener('turbolinks:load', () => {
   // [...]
   loadDynamicBannerText();
 });
+
+import { loadDynamicLthText } from '../components/lthtag';
+
+document.addEventListener('turbolinks:load', () => {
+  // Call your JS functions here
+  // [...]
+  loadDynamicLthText();
+});
