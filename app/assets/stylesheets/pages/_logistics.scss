@@ -91,14 +91,6 @@ body {
   }
 }
 
-// .yellow-box {
-//     position: absolute;
-//     width: 30%;
-//     height: 50%;
-//     border: 8px solid #AF8240;
-//     top: 30%;
-//     left: 50%;
-// }
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
 .logistics-main {
@@ -137,6 +129,15 @@ body {
   }
   .info-icons {
     width: 100%;
+  }
+
+  .yellow-box {
+    position: absolute;
+    width: 80%;
+    height: 30%;
+    border: 8px solid #AF8240;
+    top: 13%;
+    left: 10%;
   }
 
 }
