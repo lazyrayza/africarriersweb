@@ -91,6 +91,14 @@ body {
   }
 }
 
+.yellow-box {
+    position: absolute;
+    width: 85%;
+    height: 25%;
+    border: 8px solid #AF8240;
+    top: 10%;
+    right: 7%;
+  }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
@@ -136,11 +144,11 @@ body {
 
 .yellow-box {
     position: absolute;
-    width: 75%;
-    height: 30%;
+    width: 30%;
+    height: 60%;
     border: 8px solid #AF8240;
-    top: 13%;
-    left: 10%;
+    top: 25%;
+    left: 49%;
 }
 
 
