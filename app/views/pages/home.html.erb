@@ -16,7 +16,7 @@
         <span id="banner-typed-text"></span>
       </h4>
     </div>
-    <div class="banner-btn" onclick="scrollToSecondSection()">DISCOVER</div>
+    <div class="banner-btn" onclick="scrollToBottom()">DISCOVER</div>
   </div>
 </div>
 <div class="welcome" id="content">
@@ -853,6 +853,15 @@
 
 
 
+
+<script>
+var elmnt1 = document.getElementById("content");
+
+
+function scrollToBottom() {
+  elmnt1.scrollIntoView({behavior: "smooth"}); // Bottom
+}
+</script>
 
 <!-- Counter js count0 -->
 <script type="text/javascript" >
