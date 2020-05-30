@@ -91,15 +91,14 @@ body {
   }
 }
 
-.yellow-box {
-    position: absolute;
-    width: 85%;
-    height: 25%;
-    border: 8px solid #AF8240;
-    top: 10%;
-    right: 7%;
-  }
-
+// .yellow-box {
+//     position: absolute;
+//     width: 30%;
+//     height: 50%;
+//     border: 8px solid #AF8240;
+//     top: 30%;
+//     left: 50%;
+// }
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
 .logistics-main {
@@ -142,14 +141,7 @@ body {
 
 }
 
-.yellow-box {
-    position: absolute;
-    width: 30%;
-    height: 60%;
-    border: 8px solid #AF8240;
-    top: 25%;
-    left: 49%;
-}
+
 
 
 // Small devices (landscape phones, 576px and up)
@@ -228,7 +220,7 @@ body {
 }
 
 // Large devices (desktops, 992px and up)
-@media (max-width: 1200px) and (min-width: 992px) {
+@media (max-width: 1190px) and (min-width: 992px) {
   .logistics-main {
     flex-direction: column-reverse;
     height: 100%;
@@ -271,6 +263,19 @@ body {
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 
+  .logistics-picture img {
+    width: 80%;
+    padding: 8px;
+    margin: auto;
+  }
+  .yellow-box {
+   position: absolute;
+    width: 30%;
+    height: 60%;
+    border: 8px solid #AF8240;
+    top: 25%;
+    left: 49%;
+  }
 }
 
 
