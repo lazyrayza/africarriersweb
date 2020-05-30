@@ -8,7 +8,7 @@ $red: #7D1710;
 $yellow: #A76C29 ;
 $green: #655D30;
 $light_yellow: #AF8240;
-
+$brown: #8C6F37;
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -71,13 +71,19 @@ body {
   width: 75%;
   margin: auto auto 5%;
   i{
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .green{
-    color: $green;
+    color: $brown;
+    &:hover{
+      color: $green;
+    }
   }
   .yellow{
     color: $light_yellow;
+    &:hover{
+      color: $soft-yellow;
+    }
   }
 }
 

@@ -32,9 +32,53 @@ $yellow: #A76C29;
   width: 50%;
 }
 
-.intro-para{
+.intro-para-auto{
   width:75%;
   text-align: justify;
+  a{
+    color: $red;
+    font-weight: bold;
+    text-decoration: inherit; /* no underline */
+    font-size: 1.5rem;
+    &:hover{
+      color: $soft_red;
+      text-decoration: inherit;
+      text-decoration: underline;
+    }
+  }
+  .yellow{
+    color: $yellow;
+    font-weight: bold;
+    text-decoration: inherit; /* no underline */
+    font-size: 1.5rem;
+    &:hover{
+      color: $soft_yellow;
+      text-decoration: inherit;
+      text-decoration: underline;
+    }
+  }
+}
+
+.auto-info-icons{
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+  margin-top: 10%;
+  i{
+    font-size: 3rem;
+  }
+  .red{
+    color: $red;
+    &:hover{
+      color: $soft-red;
+    }
+  }
+  .yellow{
+    color: $yellow;
+    &:hover{
+      color: $soft-yellow;
+    }
+  }
 }
 
 .intro-title{
