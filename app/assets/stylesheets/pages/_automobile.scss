@@ -422,7 +422,18 @@ $yellow: #A76C29;
     flex-wrap: wrap;
     overflow: hidden;
   }
-
+  .intro-para-auto {
+    width: 100%;
+    text-align: justify;
+    padding: 6%;
+  }
+  .auto-info-icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
   .intro-left{
     width: 100%;
   }

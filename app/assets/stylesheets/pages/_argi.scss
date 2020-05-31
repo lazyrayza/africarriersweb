@@ -1,153 +1,211 @@
-.agri-wrapper {
-  position: relative;
-  background: url(https://hamarikrishi.com/wp-content/uploads/2014/04/Aeroponic-Farming-Hamari-Krishi.jpg) no-repeat center center / cover;
+$white: #fff;
+$grey: #ccc;
+$dark_grey: #474749;
+$soft_red: #B87F7C;
+$soft_yellow: #CFAE89;
+$red: #7D1710;
+$yellow: #A76C29 ;
+$green: #655D30;
+$light_yellow: #AF8240;
+$brown: #8C6F37;
+$dark_green: #79B041;
+$light_green: #D1E4BE;
+$light_pink: #FFAEE2;
+$dark_pink: #FE33B1;
 
-  // Dark overlay
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 33, 33, .25);
+.farming-main{
+  display: flex;
+  height: 100%;
+}
+
+.farming-content{
+  width: 50%;
+}
+.farm-brand{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.farming-logo{
+  display: flex;
+  width: 60%;
+  img{
+    width: 50%;
   }
 }
-.agr-wrapper {
-  height: 100vh;
-}
-header,
-.content,
-footer {
-  position: absolute;
-}
-
-header,
-footer {
-  width: 100%;
-}
-
-header {
-  top: 0;
+.farming-title{
   text-align: center;
+  margin-top: auto;
+  color: $dark_green;
+  .odd-color{
+    color: $pink;
+  }
 }
-
-.header__logo {
-  max-width: 65px;
-  fill: #eeee;
-}
-
-.content {
-  top: 50%;
-  left: 50%;
+.farming-info{
+  width: 90%;
   text-align: center;
-  color: #fff;
-  transform: translate(-50%, -50%);
-
-  h1 {
-    margin-top: 0;
-  }
-
-  form {
-    margin: auto;
-    display: table;
-  }
-
-  input {
-    float: left;
-    font-size: 16px;
-    border: 1px solid #fff;
-  }
-
-  input[type=email] {
-    padding: 12px;
-    background: #fff;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-  }
-
-  input[type=submit] {
-    padding: 12px 24px;
-    color: #fff;
-    background: transparent;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    cursor: pointer;
-    transition: all .235s ease-in-out;
-
-    &:hover {
-      color: #212121;
-      background: #fff;
-    }
-  }
-}
-
-.countdown {
   margin: auto;
-  display: table;
-  font-size: 28px;
-  font-weight: 500;
-
-  > div {
-    float: left;
-    min-width: 80px;
+  .normal-text{
+    margin: 5% 0 5% 0;
   }
-
-  span {
-    position: relative;
-    display: block;
-    font-size: 16px;
-    text-align: center;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: -2px;
-      right: 0;
-      left: 0;
-      margin-right: auto;
-      margin-left: auto;
-      width: 20px;
-      height: 1px;
-      background: #fff;
-    }
+  .light-green{
+    margin: 0% 0% 5% 0%;
+    color: $dark_green;
   }
-}
-
-footer {
-  padding-bottom: 12px;
-  bottom: 0;
-}
-
-.footer__links {
-  text-align: center;
-  list-style-type: none;
-
-  li {
-    display: inline-block;
-
-    &:nth-of-type(n+2) {
-      margin-left: 12px;
-    }
-  }
-
   a {
-    padding: 8px 0;
-    display: block;
-    width: 41px;
-    text-align: center;
-    color: #fff;
-    border: 1px solid;
-    border-radius: 50%;
-    transition: opacity .235s ease-in-out;
-
-    &:hover {
-      opacity: .5;
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+    font-size: 1.25rem;
+    &:hover{
+      color: inherit;
+      text-decoration: inherit;
     }
   }
-
-  .fa {
-    vertical-align: middle;
-    font-size: 21px;
+}
+.farms-typed{
+  margin-bottom: 15%;
+}
+#farms-typed-text{
+  font-size: 2rem;
+  color: $dark_green;
+}
+.farming-picture{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  img{
+        width: 60%;
+    height: 90%;
   }
 }
+
+.green-box{
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  border: 8px solid #79B041;
+  top: 28%;
+  left: 55%;
+}
+
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+
+  .farming-main {
+    flex-direction: column;
+  }
+  .farming-picture {
+    width: 70%;
+    margin-top: 10%;
+  }
+  .farming-picture img{
+    display: none;
+  }
+  .green-box {
+    position: absolute;
+    width: 70%;
+    height: 29%;
+    border: 8px solid #79B041;
+    top: 10%;
+    left: 5%;
+  }
+
+  .farming-content {
+    width: 100%;
+  }
+
+  .farming-brand{
+    margin-top: 15%;
+  }
+  .farming-logo {
+    display: flex;
+    width: 80%;
+  }
+  .farming-logo img {
+    width: 100%;
+    height: 50%;
+  }
+  .farming-title {
+    margin-top: 5%;
+  }
+  .green-box {
+    border: 8px solid $dark_pink;
+    top: 20%;
+    left: 17%;
+    width: 75%;
+    height: 42%;
+  }
+}
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) and (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 992px) and(min-width: 768px) {
+  .farming-logo {
+    display: flex;
+    width: 60%;
+    height: 30%
+  }
+  .farming-logo img{
+    width: 80%;
+    height: 30%
+  }
+  .farming-picture img {
+    width: 90%;
+  }
+  .green-box {
+    width: 30%;
+    height: 32%;
+    border: 8px solid #79B041;
+    top: 36%;
+    left: 60%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 1190px) and (min-width: 992px) {
+  .farming-logo {
+    display: flex;
+    width: 80%;
+    height: 50%
+  }
+  .farming-main{
+    height: 85vh;
+  }
+  .farming-info {
+    margin-top: 35%;
+  }
+  .farming-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .farming-picture img {
+    width: 75%;
+    height: 90%;
+  }
+  .green-box {
+    position: absolute;
+    width: 35%;
+    height: 20%;
+    border: 8px solid #79B041;
+    top: 42%;
+    left: 53%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+
+}
+

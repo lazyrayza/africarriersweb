@@ -58,3 +58,11 @@ document.addEventListener('turbolinks:load', () => {
   // [...]
   loadDynamicLthText();
 });
+
+import { loadDynamicFarmsText } from '../components/farms';
+
+document.addEventListener('turbolinks:load', () => {
+  // Call your JS functions here
+  // [...]
+  loadDynamicFarmsText();
+});
