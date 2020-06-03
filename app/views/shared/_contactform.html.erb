@@ -5,43 +5,47 @@
     <h3>Fill out the form below to get in touch!</h3>
   </div>
   <div class="row body">
-    <%= simple_form_for @contact do |f| %>
-    <% if flash[:error].present? %>
-        <p> flash[:error]</p>
-    <% end %>
-    <form>
+    <form action="https://formspree.io/mqkyqklb" method="POST">
       <ul>
 
         <li>
           <p class="left">
-            <%= f.label :first_name %> <br>
-            <%= f.text_field :first_name, required: true,  placeholder: "John"  %>
-          </p>
-          <p class="pull-right">
-             <%= f.label :last_name %> <br>
-            <%= f.text_field :last_name, required: true,  placeholder: "Smith"  %>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <%= f.label :email %> <br>
-            <%= f.text_field :email, required: true, placeholder: "john.smith@gmail.com" %>
+            <label>
+              Your email:
+              <input type="text" name="_replyto">
+            </label>
           </p>
         </li>
         <li><div class="divider"></div></li>
         <li>
-          <%= f.label :message %> <br>
-          <%= f.text_area :message, as: :text%>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
         </li>
 
         <li>
-          <%= f.submit 'Send Message', class: "btn btn-submit" %>
-          <small>or press <strong>enter</strong></small>
+         <button type="submit">Send</button>
         </li>
 
       </ul>
-      <% end %>
     </form>
   </div>
 </div>
+
+<!--
+
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label> -->
+
+  <!-- your other form fields go here -->
+<!--
+  <button type="submit">Send</button>
+</form>
+ -->
