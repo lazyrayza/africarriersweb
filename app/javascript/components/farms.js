@@ -2,7 +2,7 @@ import Typed from 'typed.js';
 
 const loadDynamicFarmsText = () => {
   new Typed('#farms-typed-text', {
-    strings: ["Coming Soon"],
+    strings: ["Under Maintenance"],
     typeSpeed: 50,
     loop: true
   });

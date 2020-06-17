@@ -2,10 +2,10 @@ $white: #fff;
 $grey: #ccc;
 $dark_grey: #474749;
 $soft_grey: #767171;
-$soft_red: #B87F7C;
-$soft_yellow: #CFAE89;
-$red: #7D1710;
-$yellow: #A76C29;
+$soft_blue: #375B89;
+$soft_yellow: #C2B689;
+$blue: #2F4668;
+$yellow: #AB964B;
 
 
 .body{
@@ -31,19 +31,25 @@ $yellow: #A76C29;
   height: 100%;
   width: 50%;
 }
-
+.intro-logo{
+  display: flex;
+  width: 75%;
+  img{
+    width: 40%;
+    margin: auto;
+  }
+}
 .intro-para-auto{
   width:75%;
   text-align: justify;
   a{
-    color: $red;
+    color: $blue;
     font-weight: bold;
     text-decoration: inherit; /* no underline */
     font-size: 1.5rem;
     &:hover{
-      color: $soft_red;
+      color: $soft_blue;
       text-decoration: inherit;
-      text-decoration: underline;
     }
   }
   .yellow{
@@ -54,7 +60,6 @@ $yellow: #A76C29;
     &:hover{
       color: $soft_yellow;
       text-decoration: inherit;
-      text-decoration: underline;
     }
   }
 }
@@ -67,10 +72,10 @@ $yellow: #A76C29;
   i{
     font-size: 3rem;
   }
-  .red{
-    color: $red;
+  .blue{
+    color: $blue;
     &:hover{
-      color: $soft-red;
+      color: $soft-blue;
     }
   }
   .yellow{
@@ -85,24 +90,24 @@ $yellow: #A76C29;
   padding-top: 3rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  color: #7D1710;
+  color: $blue;
 }
 .intro-right{
   height: 100%;
   width: 50%;
-  flex: 1 1 50rem;
+  // flex: 1 1 50rem;
   position: relative;
   z-index: 1;
   margin: auto;
   padding-top: 20%;
-  background: #D3C1AE;
+  background: $soft_yellow;
 }
 
 .hero-toyota{
   width: 80%;
   height: 100%;
   // object-fit: cover;
-  animation: zoominoutsinglefeatured 3s linear ;
+  animation: zoominoutsinglefeatublue 3s linear ;
 
 
 }
@@ -139,7 +144,7 @@ $yellow: #A76C29;
 //     box-sizing: border-box;
 // }
 
-@keyframes zoominoutsinglefeatured {
+@keyframes zoominoutsinglefeatublue {
     0% {
         transform: scale(0.1,0.1);
     }
@@ -221,7 +226,7 @@ $yellow: #A76C29;
 }
 
 .eicher{
-  border: 1px solid $soft_red;
+  border: 1px solid $soft_blue;
   overflow: hidden;
   transition: ease-in-out 0.4s;
   .brand-title{
@@ -229,7 +234,7 @@ $yellow: #A76C29;
   }
   &:hover{
     width: 330px;
-    border: 2px solid $red;
+    border: 2px solid $blue;
     .brand-title{
       position: absolute;
       top: 40%;
@@ -467,7 +472,7 @@ $yellow: #A76C29;
   .eicher{
     &:hover{
       width: 160px;
-      border: 2px solid $red;
+      border: 2px solid $blue;
     }
   }
 
