@@ -113,6 +113,33 @@ html, body {
       }
     }
   }
+
+  .company-logos{
+    height: 10vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 4%;
+    // .logo img{
+    //   height: 100%;
+    //   width: 100%;
+    // }
+    #afriltd-logo{
+      width: 130px;
+      margin: auto;
+      height: auto;
+    }
+    #lth-logo{
+      width: 100px;
+      height: auto;
+      margin: auto;
+    }
+    #afrifarms-logo{
+      width: 90px;
+      margin: auto;
+      height: auto;
+    }
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
