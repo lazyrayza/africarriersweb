@@ -33,10 +33,11 @@ $yellow: #AB964B;
 }
 .intro-logo{
   display: flex;
-  width: 75%;
+
   img{
     width: 40%;
     margin: auto;
+    height: 100%;
   }
 }
 .intro-para-auto{
@@ -414,12 +415,24 @@ $yellow: #AB964B;
   }
 }
 
-
+#image-flip{
+  transform: scaleX(-1);
+}
 
 
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
+  .intro-logo{
+  display: flex;
+
+  img{
+    width: 70%;
+    margin: auto;
+    height: 100%;
+  }
+}
+
   .auto-intro-container {
     width: 100%;
     margin: 0;
@@ -452,6 +465,7 @@ $yellow: #AB964B;
   }
   .intro-right{
     margin: 0;
+    width: 100%;
   }
   .plant{
     bottom: 25%;
@@ -462,29 +476,28 @@ $yellow: #AB964B;
     left: 61%;
   }
   .hero-toyota{
-    width: 95%;
+    width: 75%;
+    margin: 10%;
   }
+
   .brand{
-    height: 300px;
-    width: 100px;
+    height: 200px;
+    width: 80px;
     transform: skew(-10deg);
   }
   .eicher{
-    &:hover{
-      width: 160px;
-      border: 2px solid $blue;
+    display: none;
+      .brand-title {
+      display: none;
     }
   }
 
   .goldendragon{
-    &:hover{
-      width: 160px;
-      border: 2px solid $yellow;
-    }
+    display: none;
   }
-  .eicher:before{
-    transform: skew(10deg);
-  }
+  // .eicher:before{
+  //   transform: skew(10deg);
+  // }
   .vehicle-section-para {
     padding: 4%;
   }
@@ -519,6 +532,10 @@ $yellow: #AB964B;
       height: 145px;
     }
   }
+}
+
+#image-flip{
+  transform: scaleX(-1);
 }
 
 // Small devices (landscape phones, 576px and up)
