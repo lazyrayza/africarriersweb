@@ -1,3 +1,18 @@
+$white: #fff;
+$grey: #ccc;
+$dark_grey: #474749;
+$soft_red: #B87F7C;
+$soft_yellow: #CFAE89;
+$red: #7D1710;
+$yellow: #A76C29 ;
+$green: #655D30;
+$light_yellow: #AF8240;
+$brown: #8C6F37;
+$dark_green: #79B041;
+$light_green: #D1E4BE;
+$light_pink: #FFAEE2;
+$dark_pink: #FE33B1;
+
 html, body {
   font-family: 'Raleway', sans-serif;
   overflow: scroll;
@@ -21,7 +36,11 @@ html, body {
     margin: auto;
     line-height: 2rem;
     color: grey;
-
+    a{
+      text-decoration: none;
+      color: $red ;
+      cursor: pointer;
+    }
     .hidden-list{
       display: none;
 
