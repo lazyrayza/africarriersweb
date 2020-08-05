@@ -36,13 +36,14 @@ $yellow: #A76C29;
   display: grid;
   grid-template-rows: 75% 25%;
   transition: all 0.3s linear;
+  // box-shadow: -7px 10px 59px 0px rgba(0,0,0,0.15);
 
 
   .leader-pic{
     width: 268px;
     height: 260px;
     object-fit: cover;
-    opacity: 0.5;
+    filter: grayscale(100%);
     transition: all 0.3s linear;
 
   }
@@ -63,9 +64,9 @@ $yellow: #A76C29;
 }
 
 .leadership-card:hover{
-  box-shadow: -11px 14px 38px -1px rgba(0,0,0,0.36);
+  // box-shadow: -11px 14px 38px -1px rgba(0,0,0,0.36);
   .leader-pic{
-    opacity: 1;
+    filter: grayscale(0%);
     }
 }
 
