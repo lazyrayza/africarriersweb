@@ -115,10 +115,10 @@ html, body {
   }
 
   .company-logos{
-    height: 10vh;
+    height: 20vh;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     margin-top: 4%;
     // .logo img{
     //   height: 100%;
@@ -128,16 +128,25 @@ html, body {
       width: 130px;
       margin: auto;
       height: auto;
+      display: flex;
     }
     #lth-logo{
       width: 100px;
       height: auto;
       margin: auto;
+      display: flex;
     }
     #afrifarms-logo{
+      width: 100px;
+      margin: auto;
+      height: auto;
+      display: flex;
+    }
+    #inhem-logo{
       width: 90px;
       margin: auto;
       height: auto;
+      display: flex;
     }
   }
 }
