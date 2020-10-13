@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "/about-us/vission-and-mission", to: "pages#vissionandmission"
 
   get "/real-estate", to: "pages#realestate"
+  get "/insurance", to: "pages#insurance"
   get "/automobile-catalogue", to: "pages#automobile"
   get "/logistics", to: "pages#logistics"
   get "/manufacturing", to: "pages#manufacturing"
