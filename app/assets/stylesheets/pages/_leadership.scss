@@ -50,7 +50,7 @@ $yellow: #A76C29;
   .leadership-card-info{
     display: grid;
     .leadership-info-name{
-      font-size: 1.3rem;
+      font-size: 1rem;
       color: $dark-grey;
       font-weight: 600;
     }
@@ -63,8 +63,10 @@ $yellow: #A76C29;
 
 }
 
+
+
 .leadership-card:hover{
-  // box-shadow: -11px 14px 38px -1px rgba(0,0,0,0.36);
+  box-shadow: -11px 14px 38px -1px rgba(0,0,0,0.36);
   .leader-pic{
     filter: grayscale(0%);
     }
